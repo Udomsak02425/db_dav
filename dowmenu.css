@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(184, 184, 184);
+}
+* a{
+    text-decoration: none;
+    color: rgb(253, 85, 85);
+}
+* u{
+    text-decoration: none;
+}
+
+/* ---------------------------------------topbar------------------- */
+
+.topbar_menu{
+    padding: 0 100px;
+    min-width: 100vh;
+    background-color: rgb(184, 184, 184);
+}
+.topbar{
+    margin-top: 0px;
+}
+.topbar_db{
+    margin-bottom: 0;
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+    padding: 50 0px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    transition: .3s;
+    overflow: hidden;
+}
+.topbar_db li{
+    height: 100px;
+    list-style: none;
+}
+.topbar_db ul li a{
+    margin-top: 0;
+    transition: .4s;
+}
+.topbar_db ul li a i{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    padding: 35px;
+    transition: .4s;
+}
+.topbar_db ul li a span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    height: 0;
+    opacity: 0;
+    visibility: 0;
+    transition: .4s;
+}
+
+
+
+.topbar_db:hover{
+    height: 170px;
+    background-color: rgb(224, 224, 224);
+}
+.topbar_db:hover ul li a span{
+    height: 30px;
+    opacity: 100;
+    visibility: visible;
+}
+.topbar_db:hover ul li a i{
+    min-height: 20px;
+}
+.topbar_db ul li a:hover{
+    margin-bottom: 20px;
+}
+
+/* ----------------------------Left------------------------------ */
+
+.container{
+    margin-top: 10px;
+    min-height: 14vh;
+}
+.sidebar{
+    font-size: 20px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.sidebar ul li a{
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 70px 40px;
+    transition: .3s;
+}
+.sidebar ul li a i{
+    width: 20px;
+    transition: .3s;
+}
+.sidebar ul li a span{
+    margin-left: 20px;
+    opacity: 0;
+    visibility: 0;
+    transition: .3s ease-in;
+}
+.sidebar:hover{
+    width: 200px;
+}
+.sidebar:hover ul li a span{
+    opacity: 100;
+    visibility: visible;
+}
+.sidebar ul li a:hover{
+    margin-left: 10px;
+    background-color: rgb(218, 218, 218);
+}
+
+

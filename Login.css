@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(184, 184, 184);
+}
+* a{
+    text-decoration: none;
+    color: rgb(253, 85, 85);
+}
+*ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.user{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.user .img{
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.left , .right{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------Search------------------------- */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    background-color: white;
+    transition: .4s;
+    width: 23vh;
+    /* border: 1px solid red; */
+}
+
+.search ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----------------------------------Search_1----------------------- */
+
+/* .search-1{
+    font-size: 30px;
+    background-color: white;
+    transition: .4s;
+    width: 20vh;
+
+    border: 3px solid red;
+}
+.search_1 ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_1 .items i{
+    width: 6rem;
+    height: 40px;
+    font-size: 25px;
+    color: rgb(253, 85, 85);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+} */
+
+/* --------------------------------Phone------------------------ */
+.phone{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+    overflow: hidden;
+}
+.phone span{
+    opacity: 0;
+    overflow: hidden;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.phone:hover{
+    margin-right: 30px;
+}
+.phone span:hover{
+    opacity: 100;
+    margin-right: 30px;
+}
+/* --------------------------------Store------------------------ */
+.store{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.store span{
+    opacity: 0;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.store:hover{
+    margin-right: 30px;
+}
+.store span:hover{
+    opacity: 100;
+    margin-right: 30px;
+}
+
+/* --------------------------------home------------------------ */
+
+.home{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+    
+    /* border: 2px solid red; */
+}
+.home span{
+    font-style: unset;
+    opacity: 0;
+    overflow: hidden;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.home:hover{
+    margin-right: 30px;
+}
+.home span:hover{
+    opacity: 100;
+    margin-right: 30px;
+}
+
+/* --------------------------------Bell------------------------ */
+.bell{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.bell span{
+    font-style: unset;
+    opacity: 0;
+    overflow: hidden;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+.bell:hover{
+    margin-right: 30px;
+}
+.bell span:hover{
+    opacity: 100;
+    margin-right: 30px;
+}
+
+
+/*-----------------------Menubar-------------------- */
+
+/* .container_1{
+    margin: 0 300px;
+    padding: 0 300px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    border: 2px solid red;
+}
+.bell_bar{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: .3s;
+}
+.bell_bar:hover{
+    width: 13rem;
+}
+.home_bar{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bell_bar ul{
+    list-style: none;
+}
+.home_bar ul{
+    list-style: none;
+} */
+
+/*----------------------- Left-------------------- */
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left .space{
+    padding:20px;
+}
+
+.left .home{
+    color: white;
+    font-weight: bold;
+    width: 90px;
+    height: 30px;
+    letter-spacing: .5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 3px solid  rgb(238, 93, 93);
+    background-color: rgb(238, 93, 93);
+    transition: .3s;
+}
+
+.left .home:hover{
+    background-color: rgb(255, 207, 207);
+}
+.left .logo{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 71, 71);
+    transition: .3s;
+}
+.left .logo i{
+    font-size: 3rem;
+}
+.left .logo:hover{
+    background-color: rgb(238, 215, 215);
+}
+
+
+/*----------------------- Right-------------------- */
+
+.right{
+    margin-left: 20px;
+}
+.right .items{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .items i{
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: rgb(253, 85, 85);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.right .items i:hover{
+    background-color: rgb(238, 215, 215);
+}
+
+
+
+/* ------------------------Sidebar Menu------------------------ */
+
+
+.sidebar{
+    font-size: 20px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 10px 10px 0;
+    min-height: 100vh;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    padding: 25px 0 25px 40px;
+    transition: .3s;
+}
+.sidebar ul li a i{
+    width: 20px;
+    transition: .3s;
+}
+.sidebar ul li a span{
+    margin-left: 20px;
+    opacity: 0;
+    visibility: 0;
+    transition: .3s ease-in;
+}
+.sidebar:hover{
+    width: 200px;
+}
+.sidebar:hover ul li a span{
+    opacity: 100;
+    visibility: visible;
+}
+.sidebar ul li a:hover{
+    margin-left: 20px;
+    background-color: rgb(218, 218, 218);
+}
+
